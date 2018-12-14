@@ -58,14 +58,21 @@ $(function () {
                     size: $changeBtn.html(),
                 },
                 dataType: "json",
-                success: function (data) {
-                    mui.confirm('添加成功，去购物车看看？', '温馨提示', ['是', '否'], function(e) {
-                        if (e.index == 0) {
-                            location.href = CT.cartUrl;
-                        } else {
-                            //TODO
-                        }
-                    })
+                success:function (data) {
+                    if(data.success == true){
+                        /*弹出提示框*/
+                        /*content*/
+                        /*title*/
+                        /*btn text []*/
+                        /*click btn callback */
+                        mui.confirm('添加成功，去购物车看看？', '温馨提示', ['是', '否'], function(e) {
+                            if (e.index == 0) {
+                                location.href = CT.cartUrl;
+                            } else {
+                                //TODO
+                            }
+                        })
+                    }
                 }
             });
 

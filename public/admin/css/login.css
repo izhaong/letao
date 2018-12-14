@@ -1,0 +1,17 @@
+body {
+    background-color: #04354b;
+}
+.login_container {
+    margin: 200px auto;
+    box-shadow: 0, 0, 10px, #0489c2;
+    margin: 200px auto;
+    width: 60%;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    
+}
+.login_container h1 {
+    text-align: center;
+    margin: 20px;
+}
